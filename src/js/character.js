@@ -13,18 +13,7 @@ export default class Character {
     this.type = type;
     this.health = 100;
     this.level = 1;
-
-    // Set default attack and defence values based on type
-    const characterStats = {
-      Bowman: { attack: 25, defence: 25 },
-      Swordsman: { attack: 40, defence: 10 },
-      Magician: { attack: 10, defence: 40 },
-      Undead: { attack: 25, defence: 25 },
-      Zombie: { attack: 40, defence: 10 },
-      Daemon: { attack: 10, defence: 40 },
-    };
-
-    this.attack = characterStats[type].attack;
-    this.defence = characterStats[type].defence;
+    this.attack = 0; 
+    this.defence = 0; 
   }
 }
